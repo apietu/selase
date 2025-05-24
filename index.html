@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selase Apietu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span>Selase</span>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#work" class="nav-link">Work</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-sun" id="theme-icon"></i>
+          </button>
+          <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-intro">
+            <span class="greeting">Hello, I'm</span>
+            <h1 class="hero-name">Selase Apietu</h1>
+            <h2 class="hero-title">Software Developer & IT Specialist</h2>
+            <p class="hero-description">
+              I craft intuitive digital experiences using modern web
+              technologies. I specialize in frontend development, application
+              building, and work as a Technical IT Support Specialist. I'm
+              passionate about creating responsive, user-friendly interfaces and
+              delivering reliable tech solutions. Currently enhancing my skills
+              in React and Python to build more robust and scalable
+              applications.
+            </p>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+            <a href="#work" class="btn btn-ghost">View My Work</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-image-container">
+              <img
+                src="images/IMG_2399.JPEG"
+                alt="Selase Apietu"
+                class="profile-image"
+              />
+            </div>
+            <div class="profile-info">
+              <h3>Selase Apietu</h3>
+              <p>Software Developer</p>
+              <div class="profile-status">
+                <span class="status-dot"></span>
+                Available.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <div class="section-header">
+              <h2 class="section-title">About Me</h2>
+              <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-text">
+              <p class="about-description">
+                I'm a dedicated Information Technology graduate from the
+                University of Cape Coast with a passion for creating digital
+                solutions that make a difference. Born and raised in Ghana, I
+                bring both technical expertise and cultural perspective to every
+                project I work on.
+              </p>
+              <p class="about-description">
+                Currently serving in the National Service Scheme at Supertech,
+                where I handle network troubleshooting, customer support, and
+                system monitoring. I enjoy solving complex problems and learning
+                new technologies that push the boundaries of what's possible.
+              </p>
+            </div>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-details">
+            <div class="detail-card">
+              <h3>Quick Facts</h3>
+              <div class="detail-list">
+                <div class="detail-item">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-value">Accra, Ghana</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Education</span>
+                  <span class="detail-value">BSc. Information Technology</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Languages</span>
+                  <span class="detail-value">English, Ewe, Guan</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Interests</span>
+                  <span class="detail-value"
+                    >Web, App & Game Dev, AI & Tech</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Work</h2>
+          <p class="section-subtitle">Experience & Education</p>
+        </div>
+
+        <div class="work-tabs">
+          <button class="tab-btn active" data-tab="experience">
+            Experience
+          </button>
+          <button class="tab-btn" data-tab="education">Education</button>
+          <button class="tab-btn" data-tab="certifications">
+            Certifications
+          </button>
+        </div>
+
+        <div class="work-content">
+          <!-- Experience Tab -->
+          <div class="tab-content active" id="experience">
+            <div class="work-grid">
+              <div class="work-card">
+                <div class="work-header">
+                  <div class="company-logo">
+                    <i class="fas fa-network-wired"></i>
+                  </div>
+                  <div class="work-info">
+                    <h3>Technical Support Specialist</h3>
+                    <p class="company">Supertech - National Service</p>
+                    <span class="duration">Oct 2024 - Present</span>
+                  </div>
+                </div>
+                <div class="work-description">
+                  <p>
+                    Leading customer support and network infrastructure
+                    management, handling tier 1 & 2 troubleshooting, proactive
+                    monitoring, and system optimization for enhanced service
+                    delivery.
+                  </p>
+                </div>
+                <div class="work-tags">
+                  <span class="tag">Network Troubleshooting</span>
+                  <span class="tag">Customer Support</span>
+                  <span class="tag">System Monitoring</span>
+                </div>
+              </div>
+
+              <div class="work-card">
+                <div class="work-header">
+                  <div class="company-logo">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div class="work-info">
+                    <h3>Software Development Intern</h3>
+                    <p class="company">
+                      Opportunity International Savings & Loans
+                    </p>
+                    <span class="duration">Sep 2023 - Oct 2023</span>
+                  </div>
+                </div>
+                <div class="work-description">
+                  <p>
+                    Developed web applications using Python, provided customer
+                    support, and collaborated on team projects while gaining
+                    practical experience in software development lifecycle.
+                  </p>
+                </div>
+                <div class="work-tags">
+                  <span class="tag">Python Development</span>
+                  <span class="tag">Web Applications</span>
+                  <span class="tag">Team Collaboration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Tab -->
+          <div class="tab-content" id="education">
+            <div class="work-grid">
+              <div class="work-card">
+                <div class="work-header">
+                  <div class="company-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="work-info">
+                    <h3>BSc. Information Technology</h3>
+                    <p class="company">University of Cape Coast (UCC)</p>
+                    <span class="duration">2021 - 2024</span>
+                  </div>
+                </div>
+                <div class="work-description">
+                  <p>
+                    Comprehensive study covering software development, database
+                    systems, network administration, and modern computing
+                    practices with focus on practical application.
+                  </p>
+                </div>
+                <div class="work-tags">
+                  <span class="tag">Software Development</span>
+                  <span class="tag">Database Systems</span>
+                  <span class="tag">IT Infrastructure</span>
+                </div>
+              </div>
+
+              <div class="work-card">
+                <div class="work-header">
+                  <div class="company-logo">
+                    <i class="fas fa-school"></i>
+                  </div>
+                  <div class="work-info">
+                    <h3>General Arts</h3>
+                    <p class="company">
+                      St. Mary's Seminary Senior High School
+                    </p>
+                    <span class="duration">2017 - 2020</span>
+                  </div>
+                </div>
+                <div class="work-description">
+                  <p>
+                    West African Senior School Certificate Examinations with
+                    focus on analytical thinking, communication skills, and
+                    foundational knowledge across multiple disciplines.
+                  </p>
+                </div>
+                <div class="work-tags">
+                  <span class="tag">Critical Thinking</span>
+                  <span class="tag">Communication</span>
+                  <span class="tag">Leadership</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications Tab -->
+          <div class="tab-content" id="certifications">
+            <div class="work-grid">
+              <div class="work-card">
+                <div class="work-header">
+                  <div class="company-logo">
+                    <i class="fas fa-database"></i>
+                  </div>
+                  <div class="work-info">
+                    <h3>Modern Database Systems</h3>
+                    <p class="company">Saylor Academy</p>
+                    <span class="duration">2024</span>
+                  </div>
+                </div>
+                <div class="work-description">
+                  <p>
+                    Comprehensive understanding of modern database design,
+                    management, and optimization techniques.
+                  </p>
+                </div>
+              </div>
+
+              <div class="work-card">
+                <div class="work-header">
+                  <div class="company-logo">
+                    <i class="fab fa-python"></i>
+                  </div>
+                  <div class="work-info">
+                    <h3>Python Basics</h3>
+                    <p class="company">Coursera</p>
+                    <span class="duration">2024</span>
+                  </div>
+                </div>
+                <div class="work-description">
+                  <p>
+                    Foundation in Python programming including data structures,
+                    algorithms, and application development.
+                  </p>
+                </div>
+              </div>
+
+              <div class="work-card">
+                <div class="work-header">
+                  <div class="company-logo">
+                    <i class="fas fa-project-diagram"></i>
+                  </div>
+                  <div class="work-info">
+                    <h3>Agile Foundations with Kanban</h3>
+                    <p class="company">Professional Certification</p>
+                    <span class="duration">2024</span>
+                  </div>
+                </div>
+                <div class="work-description">
+                  <p>
+                    Agile project management methodologies and Kanban workflow
+                    optimization.
+                  </p>
+                </div>
+              </div>
+
+              <div class="work-card">
+                <div class="work-header">
+                  <div class="company-logo">
+                    <i class="fas fa-certificate"></i>
+                  </div>
+                  <div class="work-info">
+                    <h3>Certified Professional Agile Personal Agility</h3>
+                    <p class="company">Professional Certification</p>
+                    <span class="duration">2024</span>
+                  </div>
+                </div>
+                <div class="work-description">
+                  <p>
+                    Personal agility and professional development in agile
+                    environments.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Tools I work with</p>
+        </div>
+
+        <div class="skills-container">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h3>HTML5</h3>
+              <p>Semantic markup and modern web standards</p>
+              <div class="skill-level">
+                <div class="level-bar" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <h3>CSS3</h3>
+              <p>Responsive design and modern layouts</p>
+              <div class="skill-level">
+                <div class="level-bar" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <h3>JavaScript</h3>
+              <p>Interactive web applications</p>
+              <div class="skill-level">
+                <div class="level-bar" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <h3>Python</h3>
+              <p>Backend development and automation</p>
+              <div class="skill-level">
+                <div class="level-bar" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3>Django</h3>
+              <p>Web framework and rapid development</p>
+              <div class="skill-level">
+                <div class="level-bar" style="width: 75%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <h3>Git</h3>
+              <p>Version control and collaboration</p>
+              <div class="skill-level">
+                <div class="level-bar" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Databases</h3>
+              <p>Modern database systems</p>
+              <div class="skill-level">
+                <div class="level-bar" style="width: 70%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <h3>Networking</h3>
+              <p>Network troubleshooting and support</p>
+              <div class="skill-level">
+                <div class="level-bar" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-content">
+            <div class="section-header">
+              <h2 class="section-title">Let's Connect</h2>
+              <p class="section-subtitle">
+                Ready to collaborate on your next project
+              </p>
+            </div>
+            <div class="contact-text">
+              <p>
+                I'm always excited to work on new projects and collaborate with
+                fellow developers and businesses. Whether you need technical
+                support, web development, or just want to discuss technology
+                trends, I'd love to hear from you.
+              </p>
+            </div>
+            <div class="contact-cta">
+              <a
+                href="mailto:selasekodzoapietu@gmail.com"
+                class="btn btn-primary"
+                >Send Email</a
+              >
+              <div class="social-links">
+                <a
+                  href="https://www.linkedin.com/in/selase-apietu-244080226/"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/apietuß"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info">
+            <div class="contact-card">
+              <h3>Contact Information</h3>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <span class="contact-label">Email:</span>
+                    <a href="mailto:selasekodzoapietu@gmail.com"
+                      >selasekodzoapietu@gmail.com</a
+                    >
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <div>
+                    <span class="contact-label">Phone: </span>
+                    <a href="tel:+233547118373">+233 547 118 373</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div>
+                    <span class="contact-label">Location: </span>
+                    <span>Kwabenya, Abuom Junction, Accra, Ghana</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Selase Apietu. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
